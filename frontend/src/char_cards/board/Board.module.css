@@ -1,0 +1,59 @@
+.board {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+.column {
+  flex: 0 0 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #888;
+  border-radius: 6px;
+  background: Canvas;
+}
+.column[data-dragging="true"],
+.cardSlot[data-dragging="true"] {
+  opacity: 0.5;
+}
+.columnHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.grip {
+  cursor: grab;
+}
+.title {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+}
+.menu > summary,
+.addColumn > summary {
+  cursor: pointer;
+  list-style: none;
+}
+.menu[open] > button,
+.addColumn[open] > button {
+  display: block;
+  width: 100%;
+}
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 2rem;
+}
+.cardSlot {
+  cursor: grab;
+}
+.addColumn {
+  flex: 0 0 auto;
+}
