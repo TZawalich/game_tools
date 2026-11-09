@@ -1,1 +1,1 @@
-from backend.models.cards import Cards #noqa: F401
+from backend.models.cards import CardsBoard #noqa: F401
